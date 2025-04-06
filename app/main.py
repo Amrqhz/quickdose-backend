@@ -40,4 +40,3 @@ def read_root():
 @app.post("/register")
 async def register_user(email: str = Form(...), username: str = Form(...), password: str = Form(...)):
     return {"message": "User registered successfully", "email": email, "username": username}
-
